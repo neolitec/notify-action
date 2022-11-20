@@ -25,6 +25,8 @@
     "node-fetch": "^3.3.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.2.0",
+    "@commitlint/config-conventional": "^17.2.0",
     "@vercel/ncc": "^0.34.0",
     "husky": "^8.0.2",
     "rimraf": "^3.0.2"
