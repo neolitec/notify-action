@@ -1,0 +1,18 @@
+name: 'notify-action'
+description: 'Simple action to send a notification to Discord'
+inputs:
+  discord_webhook_url:
+    description: 'Url of Discord webhook'
+    required: true
+  title:
+    description: 'The title of the message'
+    required: true
+  message:
+    description: 'The message'
+    required: true
+outputs:
+  result:
+    description: 'The result of the sending'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
