@@ -1,0 +1,17 @@
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: test
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Test notification
+        uses: ./
+        # continue-on-error: true
+        with:
+          discord_webhook_url: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          title: 'Test notify action'
+          message: 'This is a test message for ${{ github.ref }}'
