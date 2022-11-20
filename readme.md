@@ -25,3 +25,7 @@ with:
   - title: Your workflow succeeds!
   - message: The workflow successfully succeeds.
 ```
+
+### TODO
+
+  - [ ] Slack hooks
