@@ -6,7 +6,8 @@
   "scripts": {
     "build:clean": "rimraf dist",
     "build:ncc": "ncc build --minify --no-source-map-register --no-cache index.js --out dist/ --license license",
-    "build": "npm run build:clean && npm run build:ncc"
+    "build": "npm run build:clean && npm run build:ncc",
+    "prepare": "husky install"
   },
   "keywords": [
     "github",
@@ -25,6 +26,7 @@
   },
   "devDependencies": {
     "@vercel/ncc": "^0.34.0",
+    "husky": "^8.0.2",
     "rimraf": "^3.0.2"
   },
   "volta": {
