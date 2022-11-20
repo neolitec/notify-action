@@ -1,6 +1,6 @@
 {
   "name": "notify-action",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Simple action to send a notification to Discord",
   "main": "dist/index.js",
   "scripts": {
